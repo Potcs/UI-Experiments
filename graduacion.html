@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gradient Background</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script>
+      function setup() {
+        createCanvas(1200, 1200);
+      }
+
+      function draw() {
+        // Calculate the grayscale value based on the cursor position
+        let grayscale = map(mouseX, 0, width, 0, 255);
+
+        // Set the background color to the calculated grayscale value
+        background(grayscale);
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script>new p5();</script>
+  </body>
+</html>
